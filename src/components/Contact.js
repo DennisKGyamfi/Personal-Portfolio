@@ -26,10 +26,11 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://us18.api.mailchimp.com/3.0/lists/cfe504c1b5", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        // "Content-Type": "application/json;charset=utf-8",
+        auth: "dennis17:fab7166fe9f4c8d4168627e988d45979-us18",
       },
       body: JSON.stringify(formDetails),
     });
