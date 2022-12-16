@@ -2,13 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<img width="1266" alt="Screen Shot of Portfolio" src=" file:///home/dennis/Pictures/Screenshots/Screenshot%20from%202022-12-16%2010-00-20.png">
+
 Built using:
 
 - Front-end library: React
 - CSS framework: React-bootstrap
 - CSS animations library: Animate.css
 
-In the /personal-portfolio, you can run:
+In my /personal-portfolio, you can run:
 
 ### `npm start`
 
