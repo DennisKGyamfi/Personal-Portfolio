@@ -101,7 +101,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+    /* opacity: 1; */
+    color: #fbeee0;
 }
 .logo {
   text-decoration: none;
@@ -116,10 +117,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   color: white;
   font-size: 4vw;
 }
-span.navbar-text {
+ navbar-text { 
     display: flex;
-    /* align-items: center; */
-}
+    align-items: center;
+      color: #fbeee0;
+} 
 .social-icon {
     display: inline-block;
     margin-left: 30px;
