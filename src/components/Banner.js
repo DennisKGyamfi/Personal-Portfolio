@@ -6,13 +6,14 @@ import Image from 'react-bootstrap/Image';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["A Web Developer", "Graphic Designer", "Social Media Manger"];
+  const toRotate = ["Web Developer", "Graphic Designer", "Social Media Manger"];
   const period = 2000;
 
   useEffect(() => {
@@ -56,10 +57,12 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`Hello! I am Dennis,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "A Web Developer", "Graphic Designer", "Social Media Manager" ]'><span className="wrap">{text}</span></span></h1>
+                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
+                  <h1>{`Hello! I am Dennis,a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ " Web Developer", "Graphic Designer", "Social Media Manager" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Born in Ghana, I believe Web design and developing can be more dynamic and inspiring.With the aim to put forward the possibilities of developing and designing, I am pursuing a course in UI/UX and progressed on HTML,CSS and Javascript. I am currently learning react, sharpening my Javascript and looking for opportunities to collaborate on Projects.</p>
-                  <button onClick={() => console.log('#connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <a href="#connect">
+                    <button  >Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </a>
                 </div>}
             </TrackVisibility>
           </Col>

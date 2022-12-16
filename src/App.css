@@ -85,7 +85,7 @@ nav.navbar {
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
+  /* padding: 0px 0; */
   background-color: #16143D; 
 }
 nav.navbar a.navbar-brand {
@@ -96,7 +96,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.5px;
-  padding: 0 15px;
   font-size: 18px;
   opacity: 1;
 }
@@ -107,7 +106,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .logo {
   text-decoration: none;
   color: white;
-  font-size: 4vw;
+  font-size: 18px;
+  margin-right: 50vw;
 }
 .logo:hover {
   color: #fbeee0;
@@ -118,7 +118,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 span.navbar-text {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .social-icon {
     display: inline-block;
@@ -178,6 +178,7 @@ span.navbar-text {
   height: 100%;
   position: absolute;
   background-color: #fbeee0;
+  border-radius: 20px;
   left: 0;
   top: 0;
   z-index: -1;
@@ -215,7 +216,7 @@ nav.navbar .navbar-toggler-icon:before {
 	position: absolute;
 	height: 2px;
 	background-color: #fff;
-	top: 0;
+	top: 5;
 	left: 0;
 	content: '';
 	z-index: 2;
@@ -237,14 +238,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
-@media screen and (min-width: 820px) {
-.logo {
-    font-size: 1.5vw;
-  }
-.logoSpan {
-    font-size: 1.5vw;
-  }
-}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -254,7 +248,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {
+/* .banner .tagline {
   font-weight: 700;
   color: black;
   letter-spacing: 0.8px;
@@ -265,7 +259,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 20px;
   display: inline-block;
-}
+} */
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -282,6 +276,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
+.banner a {
+  text-decoration: none;
+}
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -292,10 +289,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
 }
 .banner button svg {
-  font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
-  line-height: 1;
 }
 .banner button:hover svg {
   margin-left: 25px;
@@ -533,7 +528,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 20px;
   position: relative;
   transition: 0.3s ease-in-out;
 }

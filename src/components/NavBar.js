@@ -7,9 +7,7 @@ import navIcon4 from '../assets/img/github.png';
 import navIcon5 from '../assets/img/twitter.png'
 
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -39,7 +37,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-             <a href="#home" className="logo">Dennis Kwame Gyamfi </a>{/*<span className="logoSpan">|| Software Developer</span> */}
+             <a href="#home" className="logo">Dennis </a>{/*<span className="logoSpan">|| Software Developer</span> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

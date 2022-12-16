@@ -12,10 +12,10 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <MailchimpForm />
-          <Col size={12} sm={6}>
+          <Col size={12} sm={3}>
             {/* <img src={logo} alt="Logo" /> */}
             <Navbar.Brand href="/">
-              <a href="#home" className="logo">Dennis </a> <span className="logoSpan">|| Software Developer</span>
+               <a href="#home" className="logo">Dennis </a> {/*<span className="logoSpan">|| Software Developer</span> */}
             </Navbar.Brand>
           </Col>
 
